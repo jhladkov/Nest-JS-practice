@@ -12,7 +12,7 @@ export class CreateCustomerDto {
     name: string;
     @IsNotEmptyObject()
     @ValidateNested()
-    @Type(() => CreateAddressDto)
+    @Type(() => CreateAddressDto) // :TODO learn more about this!!!!
     @IsNotEmptyObject()
     address: CreateAddressDto
 }
